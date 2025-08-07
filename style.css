@@ -1,0 +1,66 @@
+#map {
+  height: 100vh;
+}
+
+/* Filter box at top right */
+.filter-container {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  z-index: 1000;
+  background: whitesmoke;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.filter-container select {
+  width: 150px;
+  margin-bottom: 5px;
+}
+
+/* Leaflet control spacing bottom-left */
+.leaflet-bottom.leaflet-left {
+  margin: 20px;
+}
+
+/* Center the search bar at the top */
+.leaflet-control-search {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  top: 10px !important;
+  right: auto !important;
+  position: absolute !important;
+  z-index: 1000;
+}
+
+/* Button to toggle layer control */
+.layer-toggle-btn {
+  position: absolute;
+  top: 180px; /* Or move lower if needed */
+  right: 10px; /* Or right: 10px for top-right */
+  z-index: 1100;
+  background: white;
+  padding: 6px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.layer-toggle-btn img {
+  width: 30px;  /* Adjust icon size */
+  height: 30px;
+}
+
+/* Position the actual layer control right below the button */
+.custom-layer-control {
+  position: absolute;
+  top: 220px; /* 180px + button height + some margin */
+  right: 10px;
+  z-index: 1100;
+  display: none;
+}
+.custom-layer-control.show {
+  display: block;
+}
+

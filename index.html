@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Distilleries Map</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-search@2.9.7/dist/leaflet-search.min.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-search@2.9.9/dist/leaflet-search.min.css" />
+
+</head>
+<body>
+<div class="layer-toggle-btn" onclick="toggleLayerControl()">
+  <img src="icon/Layer_icon.png" alt="Layers" />
+</div>
+
+<div id="layerControlContainer" class="custom-layer-control"></div>
+
+
+<div id="map"></div>
+<div class="filter-container">
+  <select id="typeFilter">
+    <option value="">All Types</option>
+  </select><br>
+  <select id="feedstockFilter">
+    <option value="">All Feedstocks</option>
+  </select><br>
+  <select id="statusFilter">
+    <option value="">All Status</option>
+  </select>
+</div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
+<script src="script.js"></script>
+
+<script src="https://unpkg.com/leaflet-control-search@2.9.9/dist/leaflet-search.min.js"></script>
+
+</body>
+</html>
